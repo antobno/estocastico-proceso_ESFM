@@ -1,0 +1,39 @@
+\newgeometry{
+	ignorefoot,
+	ignorehead,
+	left=2cm,
+	right=2cm,
+	top=3.75cm,
+	bottom=2.25cm,
+	marginparwidth=0cm,
+	marginparsep=0mm
+}
+
+\thispagestyle{empty}
+
+\begin{tikzpicture}[remember picture,overlay]%
+    \node (A) at ($(current page.center)+(0,7.75)$) {\includegraphics[width=\textwidth+5cm]{BMV.jpeg}};
+    \fill[cw0!65,opacity=0.65] ($(A.south west)+(0,0.13)$) rectangle ($(A.south east)+(0,3)$);
+\end{tikzpicture}
+
+\vspace{11.5cm}
+
+\noindent\textbf{\cabin\selectfont\color{cw0}\scalebox{7}{PROCESOS}}
+
+\noindent\textbf{\cabin\selectfont\color{cw0}\scalebox{7}{ESTOCÁSTICOS}}
+
+\vspace{1cm}
+
+\noindent\scalebox{5}{\cabin\selectfont\color{black}Tarea 1}
+
+\vspace{1.5cm}
+
+\noindent{\color{cw0}\rule{8cm}{3pt}}
+
+\vspace{0.75cm}
+
+\noindent\scalebox{2}{\fontencoding{T1}\fontfamily{pag}\selectfont\color{black}Marco Antonio Molina Mendoza}
+
+\newpage
+
+\restoregeometry%
